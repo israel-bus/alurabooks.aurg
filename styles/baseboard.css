@@ -1,0 +1,45 @@
+hr {
+    margin: 0;
+}
+
+.baseboard{
+    background: var(--branco);
+    padding: 1em;
+}
+.list-baseboard{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .baseboard{
+        display: flex;
+        justify-content: space-around;
+    }
+    .baseboard__title{
+        font-size: 24px;
+    }
+    .list-baseboard__title{
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+    .list-baseboard__item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em;
+    }
+    .list-baseboard__link{
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+    .list-baseboard{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .list-baseboard {
+        border-left: 1px solid var(--cinza);
+        padding-left: 1em;
+    }
+}
